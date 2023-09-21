@@ -74,6 +74,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         @media (max-aspect-ratio: 1/1) {
             .advant{
                 top: -10vh;
