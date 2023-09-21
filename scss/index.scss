@@ -1,0 +1,124 @@
+@import 'null';
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    @media (min-aspect-ratio: 1/1) {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+
+        background: url('../img/bg_pc.png'), linear-gradient(0deg, rgba(1, 1, 1, 0.70) 0%, rgba(1, 1, 1, 0.70) 100%), linear-gradient(163deg, #264178 0.38%, #0F1521 96.62%);
+        background-position: right;
+        background-position: 100% 100%;
+        background-size: 60vw, 100vw,100vw;
+        background-repeat: no-repeat;
+        .logo{
+            width: 80%;
+        }
+        .header{
+            width: 90%;
+        }
+        .btn{
+            width: 60%;
+        }
+        .content_inner{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 4vh;
+        }
+    }
+    @media (max-aspect-ratio: 1/1) {
+        background: url(../img/bg_mob.jpg),#000;
+        background-position: top;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-top: 40vh;
+        .logo{
+            width: 70%;
+        }
+        .header{
+            width: 80%;
+        }
+        .btn{
+            width: 50%;
+        }
+        .content_inner{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 4vh;
+        }
+    }
+}
+
+.decor{
+    width: 0px;
+    height: 0px;
+    &_inner{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-aspect-ratio: 1/1) {
+            .advant{
+                top: -10vh;
+                left: 20vw;
+                img{
+                    width: 40vw;
+                }
+            }
+            .shaiba{
+                top: 40vh;
+                left: -30vw;
+                img{
+                    width: 40vw;
+                }
+            }
+            .coin{
+                top: 40vh;
+                left: 35vw;
+                img{
+                    width: 15vw;
+                }
+            }
+        }
+        @media (min-aspect-ratio: 1/1) {
+            .advant{
+                top: -30vh;
+                left: 12vw;
+                img{
+                    width: 40vh;
+                }
+            }
+            .shaiba{
+                top: 40vh;
+                left: -40vw;
+                img{
+                    height: 30vh;
+                }
+            }
+            .coin{
+                top: 40vh;
+                left: -10vw;
+                img{
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}
